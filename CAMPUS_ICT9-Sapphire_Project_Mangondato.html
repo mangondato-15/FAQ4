@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>length conversion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<body class="container" style="background-color: #7ca3d2">
+    <br>
+    <br>
+    <center >
+    <h1 style="font-family:Gigi Regular; color: #FEBDBB">Kilometer Converter</h1>
+    <h3 style=" color: #274d83; font-family: Footlight MT Light">Try now!</h3><br>
+    </center>
+    <center class="container" style="background-color: #f7efd6; color: black">
+        <br>
+        <input type="text" id="id1"> <p style="color: black"> = </p> <p id= "id2"></p>
+        <br>
+    <div>
+        <button type="button" onclick="CFunction()" class="btn btn-outline-dark">Convert to Centimeters</button>
+        <button type="button" onclick="MFunction()" class="btn btn-outline-dark">Convert to Meters</button>
+        <button type="button" onclick="KFunction()" class="btn btn-outline-dark">Convert to Milliliters</button>
+    </div>
+        <br>
+        <script>
+            function CFunction() {
+                    var var1 = document.getElementById('id1').value;
+                    var CM = 10;
+                    var answer1 = var1 / CM
+                    document.getElementById('id2').innerHTML = answer1 + "cm";
+}
+        </script>
+        <script>
+            function MFunction() {
+                    var var2 = document.getElementById('id1').value;
+                    var M = 1000;
+                    var answer2 = var2 / M
+                    document.getElementById('id2').innerHTML = answer2 + "m";
+                }
+        </script>
+        <script>
+            function KFunction() {
+                    var var3 = document.getElementById('id1').value;
+                    var KM = 1e+6;
+                    var answer3 = var3 / KM
+                    document.getElementById('id2').innerHTML = answer3 + "km";
+                }
+        </script>
+    </center>
+</body>
+</html>
+</body>
+</html>
